@@ -202,7 +202,7 @@ export default function Home() {
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-textSecondary mb-8 max-w-3xl mx-auto leading-relaxed sm:leading-relaxed px-4">
               TriageX is an AI-powered digital triage system that helps you
-              determine the most appropriate level of medical care — quickly,
+              determine the most appropriate level of medical care quickly,
               safely, and with confidence.
             </p>
 

@@ -124,7 +124,7 @@ export default function Results() {
       <header className="w-full px-4 sm:px-6 py-4 bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <button
-            onClick={() => router.push("/input")}
+            onClick={() => router.push(ROUTES.HOME)}
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-soft focus:ring-offset-2 rounded-md px-2 py-1"
           >
             <svg
@@ -137,15 +137,18 @@ export default function Results() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M15 19l-7-7 7-7"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
-            Back
+            Home
           </button>
           <div className="flex items-center gap-3">
-            <span className="text-lg font-semibold text-primary-light">
+            <button
+              onClick={() => router.push(ROUTES.HOME)}
+              className="text-lg font-semibold text-primary-light hover:text-primary-DEFAULT transition-colors focus:outline-none focus:ring-2 focus:ring-primary-soft focus:ring-offset-2 rounded-md px-2 py-1 cursor-pointer"
+            >
               TriageX
-            </span>
+            </button>
             <LanguageToggle />
           </div>
         </div>
